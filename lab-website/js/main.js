@@ -92,4 +92,17 @@ document.addEventListener('DOMContentLoaded', function() {
             this.reset();
         });
     }
+    const toggleTeamBtn = document.getElementById("toggleTeam");
+    if (toggleTeamBtn) {
+        toggleTeamBtn.addEventListener("click", function () {
+            const expandable = document.querySelectorAll(".team-member.expandable");
+            const isVisible = expandable[0].style.display === "block";
+
+            expandable.forEach(member => {
+                member.style.display = isVisible ? "none" : "block";
+            });
+
+            this.textContent = isVisible ? "View All Team Members" : "Show Fewer Team Members";
+        });
+    }
 });

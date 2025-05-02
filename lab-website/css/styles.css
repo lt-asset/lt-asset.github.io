@@ -95,7 +95,7 @@ img {
 }
 
 section {
-    padding: 80px 0;
+    padding: 30px 0;
 }
 
 section:nth-child(even) {
@@ -197,31 +197,42 @@ nav ul li a.active::after {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    height: 40vh;
+    padding-top: 80px; /* add space for fixed header */
+    box-sizing: border-box;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
 }
 
 .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;                     /* clean, consistent spacing between elements */
 }
 
 .hero-content h2 {
-    font-family: var(--font-heading);
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;             /* reduced from 3.5rem */
+    line-height: 1.2;
+    margin: 0;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    font-size: 1.1rem;
+    margin: 0;
 }
+
+.hero-content a {
+    margin-top: 10px;
+}
+
 
 /* About Section */
 .about-content {
@@ -236,6 +247,20 @@ nav ul li a.active::after {
 
 .about-text p {
     margin-bottom: 20px;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.about-text li {
+    margin-bottom: 8px;
+}
+
+.team-member {
+    transition: all 0.3s ease;
 }
 
 .about-image {
@@ -741,4 +766,17 @@ footer {
     .photo-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.clean-list ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.clean-list li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
 }
