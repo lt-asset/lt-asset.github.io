@@ -87,7 +87,6 @@ website/index.html -->
         <div class="container">
             <div class="section-header">
                 <h2>Research Areas</h2>
-                <!-- <p>Software-AI synergy; Software dependability; Software text analytics</p> -->
             </div>
             <div class="research-grid">
                 <div class="research-item">
@@ -116,7 +115,6 @@ website/index.html -->
                     <h3>Dependable Distributed Systems</h3>
                     <p>Detecting and fixing bugs in distributed systems</p>
                     <p>Analyzing vicious cycles in distributed software</p>
-                    <!-- <p>Improving reliability of large-scale systems</p> -->
                 </div>
             </div>
         </div>
@@ -272,42 +270,6 @@ website/index.html -->
         </div>
     </section>
 
-    <section id="alumni" class="team"> <div class="container">
-            <div class="section-header">
-                <h2>Alumni</h2>
-                <p>Our Valued Former Members</p>
-            </div>
-            <div class="alumni-list clean-list"> <h4>PhD and Master's Students:</h4>
-                <ul>
-                    <li>Hung Pham (PhD, August 2022, Tenure-track Assistant Professor at York University, co-advised by Yaoliang Yu)</li>
-                    <li>Thibaud Lutellier (PhD, December 2020, Tenure-track Assistant Professor at University of Alberta, Augustana Campus)</li>
-                    <li>Song Wang (PhD, December 2018, tenured Associate Professor at York University)</li>
-                    <li>Edmund Wong (PhD, December 2018, Caffeine TV)</li>
-                    <li>Jinqiu Yang (PhD, April 2018, tenured Associate Professor at Concordia University)</li>
-                    <li>Shin Hwei Tan (MS at U. of Illinois, April 2012; co-advised by Darko Marinov; Won David J. Kuck Outstanding MS Thesis Award for 2013; tenured Associate Professor at Concordia University, Gina Cody Research Chair)</li>
-                    <li>Yitong Li (MMath Thesis@CS, December 2020; First Employment: Cisco, co-advised by Mike Godfrey)</li>
-                    <li>Yuan Xi (MMath Thesis@CS, January 2020; First Employment: Microsoft, co-advised by Mike Godfrey and Mei Nagappan)</li>
-                    <li>Moshi Wei (MASc, September 2019; First Employment: Achievers)</li>
-                    <li>Alexey Zhikhartsev (MMath Thesis@CS, December 2017; First Employment: Huawei)</li>
-                    <li>Yuefei Liu (MASc, December 2017; First Employment: Amazon)</li>
-                    <li>Michael Chong (MASc, August 2016; First Employment: Master of International Public Policy at Wilfrid Laurier University)</li>
-                    <li>Taiyue Liu (MASc, August 2016; First Employment: Amazon)</li>
-                    <li>Thibaud Lutellier (MASc, August 2015; enrolled as a PhD student at the University of Waterloo, under Dr. Tan's supervision)</li>
-                    <li>Ming Tan (MASc, August 2015; Now at Amazon)</li>
-                    <li>Devin Chollak (MMath Thesis@CS, April 2015; First Employment: Curve Dental)</li>
-                    <li>Sandeep Chaudhary (MMath Thesis@CS, December 2014; co-advised by Sebastian Fischmeister; First Employment: Amazon)</li>
-                    <li>Quinn Hanam (MASc, August 2014; co-advised by Reid Holmes; enrolled as a PhD student at the University of British Columbia)</li>
-                    <li>Lei Zhang (MASc, June 2014; First Employment: Google)</li>
-                    <li>Edmund Wong (MASc, April 2014; enrolled as a PhD student at the University of Waterloo, under Dr. Tan's supervision)</li>
-                    <li>Tian Jiang (MASc, August 2013; First Employment: Amazon)</li>
-                    <li>Pei Wang (MASc, August 2013; enrolled as a PhD student at Pennsylvania State University; Now at Google)</li>
-                    <li>Jinqiu Yang (MASc, April 2013; enrolled as a PhD student at the University of Waterloo, under Dr. Tan's supervision)</li>
-                    <li>Chen Liu (MASc, December 2012; First Employment: Microsoft)</li>
-                </ul>
-                </div>
-        </div>
-    </section>
-
     <section id="publications" class="publications">
         <div class="container">
             <div class="section-header">
@@ -349,51 +311,60 @@ website/index.html -->
     </section>
 
     <section id="software" class="software">
-        <div class="container">
-            <div class="section-header">
-                <h2>Software & Tools</h2>
-                <p>Open-source contributions from our lab</p>
+    <div class="container">
+        <div class="section-header">
+        <h2>Software & Tools</h2>
+        <p>Open-source contributions from our lab</p>
+        </div>
+        <div class="software-grid">
+        <div class="software-item">
+            <div class="software-icon">
+            <i class="fas fa-code"></i>
             </div>
-            <div class="software-grid">
-                <div class="software-item">
-                    <div class="software-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>ReSym</h3>
-                    <p>Tool for recovering variable and data structure symbols from stripped binaries using LLMs</p>
-                    <div class="software-links">
-                        <a href="https://github.com/lt-asset/resym" target="_blank" class="btn btn-small">GitHub</a>
-                    </div>
-                </div>
-                <div class="software-item">
-                    <div class="software-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>NOVA</h3>
-                    <p>Foundation models for binary code and fine-tuned models for binary code.</p>
-                    <div class="software-links">
-                        <a href="https://huggingface.co/lt-asset/nova-1.3b" target="_blank" class="btn btn-small">HuggingFace</a>
-                    </div>
-                </div>
-                <div class="software-item">
-                    <div class="software-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>LATTE</h3>
-                    <p>Improving LaTeX recognition for tables and formulae with iterative refinement</p>
-                    <div class="software-links">
-                        <a href="https://huggingface.co/datasets/lt-asset/tab2latex" target="_blank" class="btn btn-small">Dataset</a>
-                    </div>
-                </div>
-                <div class="software-item">
-                    <div class="software-icon">
-                        <i class="fas fa-cogs"></i> </div>
-                    <h3>RepoCod</h3>
-                    <p>A benchmark for code generation.</p> <div class="software-links">
-                        <a href="YOUR_REPOCOD_LINK_HERE" target="_blank" class="btn btn-small">Link</a> </div>
-                </div>
+            <h3>ReSym</h3>
+            <p class="left-desc">Tool for recovering variable and data structure symbols from stripped binaries using LLMs</p>
+            <div class="software-links">
+            <a href="https://github.com/lt-asset/resym" target="_blank" class="btn btn-small">GitHub</a>
             </div>
         </div>
+
+        <div class="software-item">
+            <div class="software-icon">
+            <i class="fas fa-database"></i>
+            </div>
+            <h3>NOVA</h3>
+            <p class="left-desc">Foundation models for binary code and fine-tuned models for binary code.</p>
+            <div class="software-links">
+            <a href="https://huggingface.co/lt-asset/nova-1.3b" target="_blank" class="btn btn-small">HuggingFace</a>
+            </div>
+        </div>
+
+        <div class="software-item">
+            <div class="software-icon">
+            <i class="fas fa-robot"></i>
+            </div>
+            <h3>LATTE</h3>
+            <p class="left-desc">Improving LaTeX recognition for tables and formulae with iterative refinement</p>
+            <div class="software-links">
+            <a href="https://huggingface.co/datasets/lt-asset/tab2latex" target="_blank" class="btn btn-small">Dataset</a>
+            </div>
+        </div>
+
+        <div class="software-item">
+            <div class="software-icon">
+            <i class="fas fa-cogs"></i>
+            </div>
+            <h3>RepoCod</h3>
+            <p class="left-desc">A complex benchmark for repository-level code generation.</p>
+            <div class="software-links">
+            <a href="YOUR_REPOCOD_LINK_HERE" target="_blank" class="btn btn-small">Link</a>
+            </div>
+        </div>
+        </div>
+        <div class="more-projects">
+            <p>More projects are available at <a href="https://www.cs.purdue.edu/homes/lintan/software.html" target="_blank">our software page</a>.</p>
+        </div>
+    </div>
     </section>
 
     <!-- <section id="photos" class="photos">
@@ -427,6 +398,57 @@ website/index.html -->
             </div>
         </div>
     </section> -->
+
+        <section id="alumni" class="team">
+        <div class="container">
+            <div class="section-header">
+            <h2>Alumni</h2>
+            <p>Our Valued Former Members</p>
+            </div>
+            <div class="alumni-list clean-list">
+            <h4>PhD and Master's Students:</h4>
+            <ul>
+                <!-- First 5 always visible -->
+                <li>Hung Pham (PhD, August 2022, Tenure-track Assistant Professor at York University, co-advised by Yaoliang Yu)</li>
+                <li>Thibaud Lutellier (PhD, December 2020, Tenure-track Assistant Professor at University of Alberta, Augustana Campus)</li>
+                <li>Song Wang (PhD, December 2018, tenured Associate Professor at York University)</li>
+                <li>Edmund Wong (PhD, December 2018, Caffeine TV)</li>
+                <li>Jinqiu Yang (PhD, April 2018, tenured Associate Professor at Concordia University)</li>
+            </ul>
+
+            <!-- Dropdown for the rest -->
+            <details>
+                <summary style="cursor: pointer; margin-top: 0.5rem; font-weight: bold;">
+                Show More Alumni
+                </summary>
+                <ul>
+                <li>Shin Hwei Tan (MS at U. of Illinois, April 2012; co-advised by Darko Marinov; Won David J. Kuck Outstanding MS Thesis Award for 2013; tenured Associate Professor at Concordia University, Gina Cody Research Chair)</li>
+                <li>Yitong Li (MMath Thesis@CS, December 2020; First Employment: Cisco, co-advised by Mike Godfrey)</li>
+                <li>Yuan Xi (MMath Thesis@CS, January 2020; First Employment: Microsoft, co-advised by Mike Godfrey and Mei Nagappan)</li>
+                <li>Moshi Wei (MASc, September 2019; First Employment: Achievers)</li>
+                <li>Alexey Zhikhartsev (MMath Thesis@CS, December 2017; First Employment: Huawei)</li>
+                <li>Yuefei Liu (MASc, December 2017; First Employment: Amazon)</li>
+                <li>Michael Chong (MASc, August 2016; First Employment: Master of International Public Policy at Wilfrid Laurier University)</li>
+                <li>Taiyue Liu (MASc, August 2016; First Employment: Amazon)</li>
+                <li>Thibaud Lutellier (MASc, August 2015; enrolled as a PhD student at the University of Waterloo, under Dr. Tan's supervision)</li>
+                <li>Ming Tan (MASc, August 2015; Now at Amazon)</li>
+                <li>Devin Chollak (MMath Thesis@CS, April 2015; First Employment: Curve Dental)</li>
+                <li>Sandeep Chaudhary (MMath Thesis@CS, December 2014; co-advised by Sebastian Fischmeister; First Employment: Amazon)</li>
+                <li>Quinn Hanam (MASc, August 2014; co-advised by Reid Holmes; enrolled as a PhD student at the University of British Columbia)</li>
+                <li>Lei Zhang (MASc, June 2014; First Employment: Google)</li>
+                <li>Edmund Wong (MASc, April 2014; enrolled as a PhD student at the University of Waterloo, under Dr. Tan's supervision)</li>
+                <li>Tian Jiang (MASc, August 2013; First Employment: Amazon)</li>
+                <li>Pei Wang (MASc, August 2013; enrolled as a PhD student at Pennsylvania State University; Now at Google)</li>
+                <li>Jinqiu Yang (MASc, April 2013; enrolled as a PhD student at the University of Waterloo, under Dr. Tan's supervision)</li>
+                <li>Chen Liu (MASc, December 2012; First Employment: Microsoft)</li>
+                </ul>
+            </details>
+            </div>
+        </div>
+        </section>
+
+
+
 
     <section id="join" class="join">
         <div class="container">
@@ -504,21 +526,38 @@ website/index.html -->
     </section>
     -->
         
-    </section> <section id="photos" class="photos">
-        <div class="container">
-            <div class="section-header">
-                <h2>Photo Gallery</h2>
-                <p>Glimpses of our lab life and activities</p>
+    <section id="photos" class="photos">
+    <div class="container">
+        <div class="section-header">
+        <h2>Photo Gallery</h2>
+        <p>Glimpses of our lab life and activities</p>
+        </div>
+        <div class="photo-grid">
+        <!-- Always visible photos -->
+        <div class="photo-item">
+            <img src="images/IMG_0129.JPG" alt="Group Photo 1" class="placeholder-image">
+        </div>
+        <div class="photo-item">
+            <img src="images/IMG_0140.JPG" alt="Group Photo 2" class="placeholder-image">
+        </div>
+        <div class="photo-item">
+            <img src="images/IMG_1234.jpeg" alt="Group Photo 3" class="placeholder-image">
+        </div>
+        <div class="photo-item">
+            <img src="images/IMG_3238.jpg" alt="Group Photo 4" class="placeholder-image">
+        </div>
+
+        <!-- Dropdown section -->
+        <details>
+            <summary style="cursor: pointer; margin-top: 1rem; font-weight: bold;">
+            Show More Photos
+            </summary>
+            <div class="photo-item">
+            <img src="images/IMG_8043.jpg" alt="Group Photo 5" class="placeholder-image">
             </div>
-            <div class="photo-grid">
-                <div class="photo-item">
-                    <img src="images/YOUR_GROUP_PHOTO_1.jpg" alt="Group Photo 1" class="placeholder-image">
-                </div>
-                <div class="photo-item">
-                    <img src="images/YOUR_GROUP_PHOTO_2.jpg" alt="Group Photo 2" class="placeholder-image">
-                </div>
-                </div>
-            </div>
+        </details>
+        </div>
+    </div>
     </section>
 
     <section id="contact" class="contact">

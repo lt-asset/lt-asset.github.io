@@ -299,6 +299,26 @@ nav ul li a.active::after {
     color: var(--primary-color);
 }
 
+/* #research .research-item p {
+  text-align: left;
+  } */
+  
+#research .research-item p {
+    position: relative;
+    padding-left: 1rem;      /* space for the bullet */
+    margin: 0.4rem 0;
+    text-align: left;
+}
+
+#research .research-item p::before {
+  content: "•";            /* the bullet */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #444;             /* adjust color if you like */
+  font-size: 1rem;         /* size of the bullet */
+  line-height: 1.2;
+}
 /* Team Section */
 .team-grid {
     display: grid;
@@ -431,6 +451,10 @@ nav ul li a.active::after {
 .software-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.software-item .left-desc {
+text-align: left;
 }
 
 .software-icon {
@@ -896,4 +920,19 @@ footer {
        padding-top: 40px;
        padding-bottom: 40px;
     */
+}
+.more-projects {
+text-align: center;
+font-style: italic;
+color: #888;
+margin-top: 1rem;
+}
+
+#alumni {
+  background-color: transparent; /* inherit page background instead of gray */
+}
+#alumni .container {
+  background-color: white;       /* container stays white */
+  padding: 2rem;
+  border-radius: 8px;
 }
