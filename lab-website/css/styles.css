@@ -10,6 +10,7 @@
     --font-primary: 'Roboto', sans-serif;
     --font-heading: 'Playfair Display', serif;
     --transition: all 0.3s ease;
+    --header-h: 120px;  
 }
 
 * {
@@ -96,6 +97,7 @@ img {
 
 section {
     padding: 30px 0;
+    scroll-margin-top: var(--header-h);
 }
 
 section:nth-child(even) {
@@ -116,11 +118,20 @@ section:nth-child(even) {
 }
 
 /* Header Styles */
-header {
+/* header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: var(--transition);
+} */
+
+header {
+  position: sticky; /* instead of fixed */
+  top: 0;
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -198,7 +209,6 @@ nav ul li a.active::after {
 /* Hero Section */
 .hero {
     height: 40vh;
-    padding-top: 80px; /* add space for fixed header */
     box-sizing: border-box;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg');
     background-size: cover;
@@ -837,7 +847,6 @@ footer {
     display: flex; /* Enables Flexbox */
     gap: 20px; /* Space between main content and sidebar */
     margin-top: 30px; /* Add some space above this area if needed */
-    padding-top: 100px;
     margin-bottom: 30px; /* Add some space below this area if needed */
 }
 
@@ -855,7 +864,7 @@ footer {
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     height: fit-content; /* Makes the sidebar only as tall as its content, or use sticky positioning */
     position: sticky; /* Makes the sidebar stick as you scroll */
-    top: 100px; /* Adjust based on your header height + desired offset */
+    top: var(--header-h);
 }
 
 .sidebar-news .section-header { /* Simplified header for sidebar */
